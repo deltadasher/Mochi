@@ -1,0 +1,26 @@
+# Local runtime and downloaded models
+.venv/
+venv/
+models/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Personal recordings and preferences
+clips/
+settings.json
+settings.tmp
+*.mp4
+*.mkv
+*.webm
+*.log
+*.sock
+.env
+.env.*
+
+# Local screenshots and scratch work
+preview.png
+audio-preview.png
+work/
+.DS_Store
