@@ -20,6 +20,21 @@ PipeWire's `pw-record`, `pactl`, FFmpeg/ffprobe, and GPU Screen Recorder with IP
 support (developed against 5.10.2). Setup downloads Vosk and its English model;
 recognition itself runs locally.
 
+Setup also registers **Mochi** in your application launcher (including Ephemeris
+and Fuzzel), with its icon and search keywords. No sudo is needed. The desktop
+entry and icon go under `$XDG_DATA_HOME` or `~/.local/share` by default.
+
+For an existing installation, or after moving the checkout, refresh the launcher:
+
+```sh
+python install_desktop.py
+```
+
+The launcher opens this checkout, so keep it in place. Reopen your launcher if it
+caches its app list. To remove the launcher entry, delete
+`applications/io.github.deltadasher.Mochi.desktop` and
+`icons/hicolor/scalable/apps/io.github.deltadasher.Mochi.svg` under your data directory.
+
 1. In **Audio & voice**, select your microphone and click **Test microphone**.
 2. Watch the input meter and say **“Mochi, clip that”**. Recognition feedback
    should show the phrase and confirm it was recognized. A mic test alone does

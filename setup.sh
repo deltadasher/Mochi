@@ -7,4 +7,5 @@ if ! .venv/bin/python -c 'import PySide6' 2>/dev/null; then
     .venv/bin/python -m pip install PySide6
 fi
 .venv/bin/python download_model.py
-echo 'Ready. Run ./run.sh to open Mochi.'
+.venv/bin/python install_desktop.py
+echo 'Ready. Search for Mochi in your app launcher, or run ./run.sh.'

@@ -649,6 +649,7 @@ def main():
         pass
     app = QApplication(sys.argv)
     app.setApplicationName("Mochi")
+    app.setDesktopFileName("io.github.deltadasher.Mochi")
     window = Window()
     window.show()
     signal.signal(signal.SIGTERM, lambda *_: window.quit_app())
